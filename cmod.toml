@@ -1,0 +1,15 @@
+[package]
+name = "github.com/Tencent/rapidjson"
+version = "1.1.0"
+edition = "2023"
+description = "A fast JSON parser/generator for C++ with both SAX/DOM style API"
+authors = ["Tencent"]
+license = "MIT"
+
+[toolchain]
+compiler = "clang"
+cxx_standard = "17"
+
+[build]
+type = "static-lib"
+include_dirs = ["include"]
