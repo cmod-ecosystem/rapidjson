@@ -1,15 +1,36 @@
 [package]
-name = "github.com/Tencent/rapidjson"
-version = "1.1.0"
+name = "rapidjson"
+version = "0.1.0"
 edition = "2023"
-description = "A fast JSON parser/generator for C++ with both SAX/DOM style API"
-authors = ["Tencent"]
-license = "MIT"
+authors = []
+
+[module]
+name = "com.github.cmod_ecosystem.rapidjson"
+root = "src/lib.cppm"
+
+[dependencies]
+
+[dev-dependencies]
+
+[build-dependencies]
+
+[features]
+
+[compat]
+cpp = ">=11"
+platforms = []
 
 [toolchain]
 compiler = "clang"
-cxx_standard = "17"
+cxx_standard = "11"
 
 [build]
 type = "static-lib"
-include_dirs = ["include"]
+parallel = true
+incremental = true
+include_dirs = []
+extra_flags = []
+sources = []
+exclude = []
+
+[target]
